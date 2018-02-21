@@ -1,5 +1,5 @@
 package com.TestStringBuilder;
-import java.io.IOException;
+
 import java.util.Scanner;
 
 public class TestStringBuilder {
@@ -22,5 +22,6 @@ public class TestStringBuilder {
         String str = str_build.toString();
 
         System.out.println(str.equals("") ? "未输入" : str);
+
     }
 }
