@@ -14,7 +14,8 @@ public class EmployeeTest {
         staff[0] = new Employee("Carl Cracker", 75000, 1987, 12, 15, "CEO");
         staff[1] = new Employee("Harry Hacker", 50000, 1989, 10, 1, "CFO");
         staff[2] = new Employee("Tony Tester", 40000, 1990, 3, 15, "engineer");
-        staff[2].setName("ycy");
+
+
         // raise everyone's salary by 5%
         for (Employee e : staff) {
             e.raiseSalary(5);
@@ -35,6 +36,13 @@ class Employee {
     private LocalDate hireDay;
     private String position;
 
+    private String testOutCode;
+
+    {
+        testOutCode = "123";
+    }
+
+
     public Employee(String n, double s, int year, int month, int day, String p) {
         name = n;
         salary = s;
@@ -42,6 +50,8 @@ class Employee {
         position = p;
 
     }
+
+
 
     public String getName() {
         return name;
